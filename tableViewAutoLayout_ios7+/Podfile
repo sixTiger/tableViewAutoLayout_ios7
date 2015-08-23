@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'tableViewAutoLayout_ios7' do
+pod 'Masonry', '~>0.6.2'
+
+end
+
+target 'tableViewAutoLayout_ios7' do
+end
+

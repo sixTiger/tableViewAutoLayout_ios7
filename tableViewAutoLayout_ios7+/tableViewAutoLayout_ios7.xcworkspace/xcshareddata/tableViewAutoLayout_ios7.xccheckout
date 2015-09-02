@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FDF26547-1BD2-4FD2-AE58-0D6E20ACB685</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tableViewAutoLayout_ios7</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0A2B3CC6506BE9A142B6551DCF2DF20E4AB6B40C</key>
+		<string>https://github.com/sixTiger/tableViewAutoLayout_ios7.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tableViewAutoLayout_ios7+/tableViewAutoLayout_ios7.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0A2B3CC6506BE9A142B6551DCF2DF20E4AB6B40C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sixTiger/tableViewAutoLayout_ios7.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0A2B3CC6506BE9A142B6551DCF2DF20E4AB6B40C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0A2B3CC6506BE9A142B6551DCF2DF20E4AB6B40C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tableViewAutoLayout_ios7</string>
+		</dict>
+	</array>
+</dict>
+</plist>

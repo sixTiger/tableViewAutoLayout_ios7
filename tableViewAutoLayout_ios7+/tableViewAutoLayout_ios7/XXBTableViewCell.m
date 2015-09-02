@@ -8,6 +8,7 @@
 
 #import "XXBTableViewCell.h"
 #import <Masonry.h>
+#import <ReactiveCocoa.h>
 #import "XXBModel.h"
 
 @interface XXBTableViewCell ()
@@ -62,24 +63,29 @@
     _label3 = label3;
     _iconImage = imageView;
     CGFloat panding = 5;
+    @weakify(self);
     [_iconImage mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
         make.top.equalTo(self.contentView.mas_top).with.offset(panding);
         make.left.equalTo(self.contentView.mas_left).offset(panding);
         make.right.equalTo(self.contentView.mas_right).offset(-panding);
         make.height.mas_equalTo(30);
     }];
     [_label1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
         make.top.equalTo(self.iconImage.mas_bottom).with.offset(panding);
         make.left.equalTo(self.contentView.mas_left).offset(panding);
         make.right.equalTo(self.contentView.mas_right).offset(-panding);
     }];
     [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
         make.top.equalTo(self.label1.mas_bottom).with.offset(panding);
         make.left.equalTo(self.contentView.mas_left).offset(panding);
         make.right.equalTo(self.contentView.mas_right).offset(-panding);
     }];
     
     [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
         make.top.equalTo(self.label2.mas_bottom).with.offset(panding);
         make.left.equalTo(self.contentView.mas_left).offset(panding);
         make.right.equalTo(self.contentView.mas_right).offset(-panding);

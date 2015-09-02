@@ -50,38 +50,38 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *reuseIdentifier = @"cell";
-    XXBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-    cell.model = self.dataSourceArray[indexPath.row];
-    CGFloat contentViewWidth = CGRectGetWidth(cell.frame);
-    if (cell.accessoryView) {
-        contentViewWidth -= 16 + CGRectGetWidth(cell.accessoryView.frame);
-    } else {
-        static CGFloat systemAccessoryWidths[] = {
-            [UITableViewCellAccessoryNone] = 0,
-            [UITableViewCellAccessoryDisclosureIndicator] = 34,
-            [UITableViewCellAccessoryDetailDisclosureButton] = 68,
-            [UITableViewCellAccessoryCheckmark] = 40,
-            [UITableViewCellAccessoryDetailButton] = 48
-        };
-        contentViewWidth -= systemAccessoryWidths[cell.accessoryType];
-    }
-    CGSize fittingSize = CGSizeZero;
-    
-    NSLayoutConstraint *tempWidthConstraint =
-    [NSLayoutConstraint constraintWithItem:cell.contentView
-                                 attribute:NSLayoutAttributeWidth
-                                 relatedBy:NSLayoutRelationEqual
-                                    toItem:nil
-                                 attribute:NSLayoutAttributeNotAnAttribute
-                                multiplier:1.0
-                                  constant:contentViewWidth];
-    [cell.contentView addConstraint:tempWidthConstraint];
-    
-    fittingSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    [cell.contentView removeConstraint:tempWidthConstraint];
-        fittingSize.height += 1.0 / [UIScreen mainScreen].scale;
-    return fittingSize.height;
+//    NSString *reuseIdentifier = @"cell";
+//    XXBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+//    cell.model = self.dataSourceArray[indexPath.row];
+//    CGFloat contentViewWidth = CGRectGetWidth(cell.frame);
+//    if (cell.accessoryView) {
+//        contentViewWidth -= 16 + CGRectGetWidth(cell.accessoryView.frame);
+//    } else {
+//        static CGFloat systemAccessoryWidths[] = {
+//            [UITableViewCellAccessoryNone] = 0,
+//            [UITableViewCellAccessoryDisclosureIndicator] = 34,
+//            [UITableViewCellAccessoryDetailDisclosureButton] = 68,
+//            [UITableViewCellAccessoryCheckmark] = 40,
+//            [UITableViewCellAccessoryDetailButton] = 48
+//        };
+//        contentViewWidth -= systemAccessoryWidths[cell.accessoryType];
+//    }
+//    CGSize fittingSize = CGSizeZero;
+//    
+//    NSLayoutConstraint *tempWidthConstraint =
+//    [NSLayoutConstraint constraintWithItem:cell.contentView
+//                                 attribute:NSLayoutAttributeWidth
+//                                 relatedBy:NSLayoutRelationEqual
+//                                    toItem:nil
+//                                 attribute:NSLayoutAttributeNotAnAttribute
+//                                multiplier:1.0
+//                                  constant:contentViewWidth];
+//    [cell.contentView addConstraint:tempWidthConstraint];
+//    
+//    fittingSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+//    [cell.contentView removeConstraint:tempWidthConstraint];
+//        fittingSize.height += 1.0 / [UIScreen mainScreen].scale;
+//    return fittingSize.height;
 
     
     return[tableView heightForCellWithIdentifier:@"cell"

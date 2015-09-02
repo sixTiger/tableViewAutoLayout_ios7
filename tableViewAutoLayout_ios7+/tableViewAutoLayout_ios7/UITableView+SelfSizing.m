@@ -133,7 +133,6 @@ static CGFloat const _SelfSizingCellHeightCacheAbsentValue = -1;
     if (!self.p_precacheEnabled) {
         return;
     }
-
     
     if (![self.delegate respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)]) {
         return;

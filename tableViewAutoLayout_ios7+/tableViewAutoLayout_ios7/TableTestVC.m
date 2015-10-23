@@ -1,29 +1,29 @@
 //
-//  ViewController.m
+//  TableTestVC.m
 //  tableViewAutoLayout_ios7
 //
-//  Created by 杨小兵 on 15/8/23.
-//  Copyright (c) 2015年 杨小兵. All rights reserved.
+//  Created by xiaobing on 15/10/23.
+//  Copyright © 2015年 杨小兵. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TableTestVC.h"
 #import <Masonry.h>
 #import "XXBTableViewCell.h"
 #import "XXBModel.h"
-//#import "UITableView+SelfSizing.h"
+#import "UITableView+SelfSizing.h"
 #define cellCount 100
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@interface TableTestVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *dataSourceArray;
 
-
-
-
 @property (strong, nonatomic) NSMutableDictionary *offscreenCells;
+
 @end
 
-@implementation ViewController
+@implementation TableTestVC
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,45 +50,11 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *reuseIdentifier = @"cell";
-    XXBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-    cell.model = self.dataSourceArray[indexPath.row];
-    CGFloat contentViewWidth = CGRectGetWidth(cell.frame);
-    if (cell.accessoryView) {
-        contentViewWidth -= 16 + CGRectGetWidth(cell.accessoryView.frame);
-    } else {
-        static CGFloat systemAccessoryWidths[] = {
-            [UITableViewCellAccessoryNone] = 0,
-            [UITableViewCellAccessoryDisclosureIndicator] = 34,
-            [UITableViewCellAccessoryDetailDisclosureButton] = 68,
-            [UITableViewCellAccessoryCheckmark] = 40,
-            [UITableViewCellAccessoryDetailButton] = 48
-        };
-        contentViewWidth -= systemAccessoryWidths[cell.accessoryType];
-    }
-    CGSize fittingSize = CGSizeZero;
-    
-    NSLayoutConstraint *tempWidthConstraint =
-    [NSLayoutConstraint constraintWithItem:cell.contentView
-                                 attribute:NSLayoutAttributeWidth
-                                 relatedBy:NSLayoutRelationEqual
-                                    toItem:nil
-                                 attribute:NSLayoutAttributeNotAnAttribute
-                                multiplier:1.0
-                                  constant:contentViewWidth];
-    [cell.contentView addConstraint:tempWidthConstraint];
-    
-    fittingSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    [cell.contentView removeConstraint:tempWidthConstraint];
-        fittingSize.height += 1.0 / [UIScreen mainScreen].scale;
-    return fittingSize.height;
-
-    
-//    return[tableView heightForCellWithIdentifier:@"cell"
-//                                cacheByIndexPath:indexPath
-//                                   configuration:^(XXBTableViewCell *cell) {
-//                                       return [self configureCell:cell atIndexPath:indexPath];
-//                                   }];
+    return[tableView heightForCellWithIdentifier:@"cell"
+                                cacheByIndexPath:indexPath
+                                   configuration:^(XXBTableViewCell *cell) {
+                                       return [self configureCell:cell atIndexPath:indexPath];
+                                   }];
 }
 - (void)configureCell:(XXBTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {

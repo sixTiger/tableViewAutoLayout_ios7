@@ -17,6 +17,7 @@
 		62F220031B8965A5007D1ECB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F220021B8965A5007D1ECB /* Images.xcassets */; };
 		62F220061B8965A5007D1ECB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F220041B8965A5007D1ECB /* LaunchScreen.xib */; };
 		62F220121B8965A5007D1ECB /* tableViewAutoLayout_ios7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F220111B8965A5007D1ECB /* tableViewAutoLayout_ios7Tests.m */; };
+		62F24E8A1BDA21A500053185 /* TableTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F24E891BDA21A500053185 /* TableTestVC.m */; };
 		751DD9811461A00B10CC9E40 /* libPods-tableViewAutoLayout_ios7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9729C4A41753027F9A3CB6E /* libPods-tableViewAutoLayout_ios7.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		62F2200B1B8965A5007D1ECB /* tableViewAutoLayout_ios7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewAutoLayout_ios7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F220101B8965A5007D1ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F220111B8965A5007D1ECB /* tableViewAutoLayout_ios7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableViewAutoLayout_ios7Tests.m; sourceTree = "<group>"; };
+		62F24E881BDA21A500053185 /* TableTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableTestVC.h; sourceTree = "<group>"; };
+		62F24E891BDA21A500053185 /* TableTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableTestVC.m; sourceTree = "<group>"; };
 		63674472D167FF2FE7BAF805 /* Pods-tableViewAutoLayout_ios7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableViewAutoLayout_ios7.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tableViewAutoLayout_ios7/Pods-tableViewAutoLayout_ios7.debug.xcconfig"; sourceTree = "<group>"; };
 		D9729C4A41753027F9A3CB6E /* libPods-tableViewAutoLayout_ios7.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tableViewAutoLayout_ios7.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +114,8 @@
 				6240044F1B89750F0023A767 /* XXBTableViewCell.m */,
 				624004511B8979070023A767 /* XXBModel.h */,
 				624004521B8979070023A767 /* XXBModel.m */,
+				62F24E881BDA21A500053185 /* TableTestVC.h */,
+				62F24E891BDA21A500053185 /* TableTestVC.m */,
 			);
 			path = tableViewAutoLayout_ios7;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				62F21FFB1B8965A5007D1ECB /* AppDelegate.m in Sources */,
 				624004501B89750F0023A767 /* XXBTableViewCell.m in Sources */,
 				62F21FF81B8965A5007D1ECB /* main.m in Sources */,
+				62F24E8A1BDA21A500053185 /* TableTestVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

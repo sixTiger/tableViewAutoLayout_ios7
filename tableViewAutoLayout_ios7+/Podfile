@@ -6,6 +6,6 @@ pod 'Masonry', '~>0.6.2'
 pod 'ReactiveCocoa', '2.5'
 end
 
-target 'tableViewAutoLayout_ios7' do
+target 'tableViewAutoLayout_ios7Tests' do
 end
 

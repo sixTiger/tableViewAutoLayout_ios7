@@ -1,0 +1,19 @@
+{
+  "name": "XXBLibs",
+  "requires_arc": true,
+  "version": "1.0.0",
+  "summary": "test",
+  "homepage": "https://github.com/sixTiger/XXBLibs",
+  "license": "MIT",
+  "authors": {
+    "杨小兵": "six_tiger@163.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://github.com/sixTiger/XXBLibs.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "XXBLib/**/*.{h,m}"
+}

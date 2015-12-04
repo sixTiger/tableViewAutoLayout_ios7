@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "86A0EBD7B77718AD6CC924BC"
+               BlueprintIdentifier = "CEDA83FBFC8FCA28F1A8E75A"
                BuildableName = "libPods-tableViewAutoLayout_ios7.a"
                BlueprintName = "Pods-tableViewAutoLayout_ios7"
                ReferencedContainer = "container:Pods.xcodeproj">
